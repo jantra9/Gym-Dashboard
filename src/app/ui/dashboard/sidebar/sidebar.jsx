@@ -38,7 +38,7 @@ const SideBar = () => {
     <div >
         <div className=' pb-14'>
             <h1 className='font-bold'>FITGYM</h1>
-            <p>Gym Management System</p>
+            <p className='opacity-75'>Gym Management System</p>
         </div>
         <ul>
              {menuItems.map(item=>(

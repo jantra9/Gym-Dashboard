@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import SideBar from '../ui/dashboard/sidebar/sidebar';
 import NavBar from '../ui/dashboard/navbar/navbar';
-import styles from '../ui/dashboard/dashboard.module.css';
+
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,12 +9,12 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.menu}>
+    <div className='grid grid-cols-10 h-full '>
+      <div className='col-span-2 bg-black pt-7 px-4'>
         <SideBar />
       </div>
-      <div className={styles.content}>
-        <div className={styles.navbarContainer}>
+      <div className='col-span-8 bg-white text-black'>
+        <div>
             <NavBar />
         </div>
         {children}

@@ -1,17 +1,10 @@
 import React,{useState} from 'react'
 
-
-const list =[
-    '#MGYM-89274-110',
-    'Emma Tran',
-    'Pet (Full-time)',
-    'November 2022',
-    "Unlimited",
-    "6:40 pm",
-    '2:00 am',
-    "November 2022"
-];
-const Table = () => {
+interface TableProps {
+  headers: (string | { label: string, colspan: number })[],
+  list: string[]
+}
+const Table:React.FC<TableProps> = ({headers, list}) => {
 
   return (
     <div className='w-full flex justify-center'>
@@ -19,14 +12,11 @@ const Table = () => {
         <thead>
           <tr><th colSpan={9} className='bg-black text-white text-left rounded-t-lg h-10 pl-5'>MEMBER MANAGEMENT</th></tr>
           <tr className='bg-gray-300 min-w-full h-10'>
-            <th colSpan={2}>Member ID</th>
-            <th>Member Name</th>
-            <th>Membership</th>
-            <th>Joined</th>
-            <th>Expiry Date</th>
-            <th>Check In</th>
-            <th>Check Out</th>
-            <th>Date</th>
+          {headers.map((header, index) => (
+              <th key={index} colSpan={typeof header === 'object' ? header.colspan : 1}>
+                {typeof header === 'object' ? header.label : header}
+              </th>
+            ))}
           </tr>
         </thead>
         <tbody className='bg-gray-100'>

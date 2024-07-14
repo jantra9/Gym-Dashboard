@@ -21,6 +21,27 @@ const AttendanceCardList=[
       number:25
   }
 ]
+const headers = [
+  { label: 'Member ID', colspan: 2 },
+  'Member Name',
+  'Membership',
+  'Joined',
+  'Expiry Date',
+  'Check In',
+  'Check Out',
+  'Date'
+];
+
+const list =[
+    '#MGYM-89274-110',
+    'Emma Tran',
+    'Pet (Full-time)',
+    'November 2022',
+    "Unlimited",
+    "6:40 pm",
+    '2:00 am',
+    "November 2022"
+];
 const MemberManagement: React.FC = () => {
  
     return (
@@ -32,7 +53,7 @@ const MemberManagement: React.FC = () => {
             ))}
         </div>
         <div className="flex justify-center">
-          <Table />  
+          <Table headers={headers} list={list} />  
         </div>
       </div>
     );
