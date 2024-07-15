@@ -1,10 +1,10 @@
-#About The Project
-###Build with
+# About The Project
+### Build with
 Next.js and Tailwind
-##H2 Getting Started
+## Getting Started
 Gym Dashboard website, featuring a login page and a comprehensive member dashboard for managing all your fitness information.
 
-###Prerequisites
+### Prerequisites
 Please install the npm following:
   ```sh
   npm install next@14.2.4 react@^18 react-dom@^18 react-icons@^5.2.1 recharts@^2.12.7
@@ -14,12 +14,12 @@ or
 yarn add next@14.2.4 react@^18 react-dom@^18 react-icons@^5.2.1 recharts@^2.12.7
 ```
 
-###Installation
+### Installation
 1.Clone the repo.
 2.Install the npm package.
 3.Go to terminal and run the website using npx next start
 
-###Diagrams
+### Diagrams
 
 
 <img width="679" alt="Login" src="https://github.com/user-attachments/assets/6d15d8f8-5a0e-4a1f-b44f-1053ba890237">
