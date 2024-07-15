@@ -1,1 +1,1 @@
-<span style="font-size:0.5em;">About the project</span>
+<span style="font-size:2em;">About the project</span>
