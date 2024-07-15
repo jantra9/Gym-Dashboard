@@ -27,7 +27,7 @@ const EquipmentManagement: React.FC = () => {
     return (
       <div>
         <p className="pl-4 opacity-70 text-sm py-1">Detailed view of all available equipment</p>
-        <div className="grid grid-cols-4 gap-x-2 px-6 py-5">
+        <div className="py-3 sm:grid grid-cols-4 gap-x-2 px-6 sm:py-5">
           <Card title="New Equipment" number={3}/>
           <Card title="In Repair" number={3}/>
           <Card title="Collected" number={2}/>

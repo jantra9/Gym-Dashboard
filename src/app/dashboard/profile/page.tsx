@@ -23,16 +23,16 @@ const Attendance: React.FC = () => {
  
     return (
       <div>
-        <p className="pl-4 opacity-70 text-sm pb-4">Detaild view of member details</p>
+        <p className="sm:pl-4 opacity-70 text-sm pb-4">Detaild view of member details</p>
         <div className="flex justify-center pb-4">
             <ProfileInfo />
         </div>
-        <div className="grid grid-cols-4 gap-2 px-9">
+        <div className="gap-2 px-9 sm:grid grid-cols-4 ">
             {ProfileCardList.map(item=>(
                 <Card title={item.title} number={item.number}/>
             ))}
         </div>
-        <div>
+        <div className="mb-32 sm:mb-4">
             <Chart />
         </div>
       </div>

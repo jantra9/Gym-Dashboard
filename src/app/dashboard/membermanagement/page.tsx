@@ -46,13 +46,13 @@ const MemberManagement: React.FC = () => {
  
     return (
       <div>
-      <p className="pl-4 opacity-70 text-sm py-1 mb-2">Mark your attendance to attend the gym</p>
-      <div className="grid grid-cols-4 gap-2 px-9 mb-6">
+      <p className="sm:pl-4 opacity-70 text-sm py-1 mb-2">Detailed view of member details</p>
+      <div className="gap-2 px-9 sm:grid grid-cols-4 mb-6">
             {AttendanceCardList.map(item=>(
                 <Card title={item.title} number={item.number}/>
             ))}
         </div>
-        <div className="flex justify-center">
+        <div className="overflow-x-auto sm:flex justify-center">
           <Table headers={headers} list={list} />  
         </div>
       </div>

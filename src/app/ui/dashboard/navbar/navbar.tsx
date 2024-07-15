@@ -25,11 +25,11 @@ const NavBar: React.FC = () => {
     }
   };
   return (
-    <div className='flex flex-col'>
+    <div className=' sm:flex flex-col'>
 
 
-      <div className='flex justify-between p-4'>
-        <div className='flex gap-2 opacity-50 items-center'>
+      <div className='hidden sm:flex justify-between p-4'>
+        <div className='hidden sm:flex gap-2 opacity-50 items-center'>
           <PiHouseSimpleLight size={22} style={{opacity:0.5}}/>
           <span>Fitgym</span>
           <IoIosArrowForward style={{opacity:0.5}}/>

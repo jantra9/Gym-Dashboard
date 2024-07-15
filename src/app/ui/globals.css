@@ -4,10 +4,6 @@
 
 @import "tailwindcss/utilities";
 
-:root {
---bg:#000000;
---text:#FFFFFF;
-}
 *{
   margin: 0;
   box-sizing: border-box;
@@ -15,6 +11,6 @@
 }
 
 body{
-  background-color:var(--bg);
-  color:var(--text);
+  background-color:white;
+  color:black;
 }

@@ -23,15 +23,22 @@ const list =[
   "Jun 4, 2024"
 ];
 
+const StaffManagementCardList = [
+  { title: "Total Employees", number: 61 },
+  { title: "Total's Attendance", number: 36 },
+  { title: "Late Comings", number: 3 },
+  { title: "Off", number: 47 },
+];
+
 const StafManagement: React.FC = () => {
     return (
       <div>
-        <p className="pl-4 opacity-70 text-sm py-1">Detailed view of the staff member</p>        <div className="grid grid-cols-4 gap-x-2 px-6 py-5">
-          <Card title="Total Employees" number={61}/>
-          <Card title="Total's Attendance" number={36}/>
-          <Card title="Late Comings" number={3}/>
-          <Card title="Off" number={47}/>
-        </div>
+        <p className="pl-4 opacity-70 text-sm py-1">Detailed view of the staff member</p>        
+          <div className="px-3 sm:grid grid-cols-4 gap-x-2">
+              {StaffManagementCardList.map((item, index) => (
+              <Card key={index} title={item.title} number={item.number} />
+              ))}
+          </div>
         <Table list={list} headers={headers} />
       </div>
     );

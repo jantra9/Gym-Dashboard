@@ -13,10 +13,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors:{
-        'light-gray':"#f5f5f4",
-        'light-pink':'#FBC3C3',
-      }
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(150px, 1fr))',
+      },
     },
   },
   plugins: [],

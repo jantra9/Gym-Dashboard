@@ -43,15 +43,15 @@ const MemberList=[
 const Attendance: React.FC = () => {
  
     return (
-      <div>
+      <div className="pb-36 sm:pb-2">
         <p className="pl-4 opacity-70 text-sm pb-4">Mark your attendance to attend the gym</p>
-        <div className="grid grid-cols-4 gap-2 px-9">
+        <div className=" gap-2 px-9 sm:grid grid-cols-4">
             {AttendanceCardList.map(item=>(
                 <Card title={item.title} number={item.number}/>
             ))}
         </div>
-        <div className="flex px-9 py-5 gap-2">
-            <div>
+        <div className="py-0 sm:flex px-9 sm:py-5 gap-4">
+            <div className="flex justify-center py-4 sm:block">
                 <Image
                 src="/Avatar.1.jpg"
                 alt="User Avatar"
@@ -65,7 +65,7 @@ const Attendance: React.FC = () => {
                 MemberList.map(item=>(
                     <div className="flex flex-col pb-3">
                     <label className="font-semibold">{item.title}</label>
-                    <input placeholder={item.placeholder} className="border-2 w-72 h-9 rounded-lg outline-none px-2"/>     
+                    <input placeholder={item.placeholder} className="border-2 sm:w-72 h-9 rounded-lg outline-none px-2"/>     
                     </div>      
                 ))
                 } 
